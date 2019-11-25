@@ -54,7 +54,7 @@ resource "azurerm_virtual_machine" "webserver_1" {
   resource_group_name   = module.vnet.rg_name
   location              = module.vnet.rg_location
   network_interface_ids = [azurerm_network_interface.webserver_1.id]
-  vm_size               = "Standard_D8s_v3"
+  vm_size               = var.vm_size
   availability_set_id   = azurerm_availability_set.webserver.id
 
   delete_os_disk_on_termination    = true
@@ -128,7 +128,7 @@ resource "azurerm_virtual_machine" "webserver_1" {
 #   resource_group_name   = module.vnet.rg_name
 #   location              = module.vnet.rg_location
 #   network_interface_ids = [azurerm_network_interface.webserver_2.id]
-#   vm_size               = "Standard_D8s_v3"
+#   vm_size               = var.vm_size
 #   availability_set_id   = azurerm_availability_set.webserver.id
 
 #   delete_os_disk_on_termination    = true

@@ -1,7 +1,7 @@
 policy "enforce-mandatory-tags" {
-  enforcement_level = "advisory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-vm-size" {
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "advisory"
 }
