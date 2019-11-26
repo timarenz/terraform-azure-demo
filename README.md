@@ -24,4 +24,9 @@ Login to the Azure portal show all resources that are created.
 
 After everything is up and running add some changes, for that remove the comments from the `lb.tf` and `vm.tf`file. Then apply the new configuration. Make sure you show the plan / changes before applying the new configuration.
 
+
+# Terraform Enterprise Workflow
+
+Make sure workspace `azure-demo-app` is destroy, if not queue a destroy plan and destroy an preexisting environment.
+
 [1]: https://www.terraform.io/docs/providers/azurerm/guides/azure_cli.html
