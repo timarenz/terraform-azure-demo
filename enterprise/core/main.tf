@@ -12,7 +12,7 @@ module "vnet" {
   }]
 }
 
-  module "vnet" {
+  module "vnet2" {
   source           = "app.terraform.io/timarenz/environment/azurerm"
   version          = "0.2.0"
   environment_name = var.environment
