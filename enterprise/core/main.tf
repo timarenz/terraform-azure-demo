@@ -8,6 +8,8 @@ module "vnet" {
   region           = "West Europe"
   subnets = [{
     name   = "subnet-1"
-    prefix = "192.168.42.0/24"
+    prefix = "192.168.42.0/24"},
+    name   = "subnet-2"
+    prefix = "192.168.43.0/24"
   }]
 }
