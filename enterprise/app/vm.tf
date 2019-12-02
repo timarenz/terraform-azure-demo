@@ -110,7 +110,7 @@ resource "azurerm_network_interface" "webserver_2" {
 
   ip_configuration {
     name                          = "webserver-2-private-ip"
-    subnet_id                     = data.terraform_remote_state.core.outputs.subnet_ids[0]
+    subnet_id                     = data.terraform_remote_state.core.outputs.subnet_ids[1]
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id          = azurerm_public_ip.webserver_2.id
   }
